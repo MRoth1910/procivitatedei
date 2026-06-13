@@ -1,0 +1,51 @@
+% !TEX TS-program = lualatexmk
+% !TEX parameter =  --shell-escape
+\documentclass[12pt]{book}
+
+\input{commonheaders_pcd_2026}
+
+\begin{document}
+
+%%% will need to fix spacing problem in psalms at a later date.
+ 
+ \twosided[pc] %% to allow for the left-right switching of columns needed for bilingual liturgical typesetting (like in missals); it's unclear why this goes BEFORE everything else and not when activating the environment. %% It's OK for paper booklets to not switch, but it's probably best practice to switch.
+  
+  %% need feast title header 
+  %% and modern date
+  \input{title_page}
+
+%\textes{pater_ave_credo_la_en.tex}
+
+\textes{ante_post_do}
+
+\newpage\null\thispagestyle{empty}
+
+\newpage\null\thispagestyle{empty}
+
+\setcounter{page}{1}
+
+\input{12_junii}
+
+\input{13_junii}
+
+\input{14_junii}
+
+\input{15_junii}
+
+\input{16_junii}
+
+\input{17_junii}
+
+\input{18_junii}
+
+\input{19_junii}
+
+\input{ad_completorium}
+  
+  \newpage
+\tableofcontents
+\thispagestyle{empty}
+
+  \thispagestyle{empty}
+
+  \end{document}

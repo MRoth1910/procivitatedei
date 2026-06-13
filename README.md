@@ -27,17 +27,17 @@ I recommend finding out how to use magic comments in your editor if you use one 
 
 But the specific way to type the magic comment (sometimes case-senstive) and which ones are accepted depend on your editor. I don't recommend trying to use `shell-escape` all the time; that's unnecessary and introduces a security risk. I don't recommend changing the default `pdflatex` (even though it's outdated) unless you are a true expert: setting this in your documents lets LaTeX do everything for you, without an error message for something that keeps your document from compiling.
 
-## other
+# Other
 
 The booklet size for PCD is A4, the standard European (ISO) paper size. However, with `geometry`, one can even make custom, not-available sizes or use any other standard (see that package's documentation). Then one just needs to tweak the dimensions, but I have used these settings with American letter paper, smaller paper, etc. with very few changes.
 
 # How did I make the title?
 
-See the `pcd.tex` file and change the words and paper size. Then in Inkscape, you need to :
+See the `pcd.tex` file and change the words and paper size as needed. Then in Inkscape, you need to :
 
 1. Import the PDF: Open Inkscape, click File > Open, and select your PDF. In the PDF import settings window, make sure to set the Text import option to "Embed fonts" or "Import text as text" (depending on your Inkscape version) so the text is recognized.
 2. (I probably skipped this step: start over if you have problems and include it if you find the result unsatisfactory): Ungroup Elements: By default, the PDF imports as a single group. Select the document (or press Ctrl + A) and press Ctrl + Shift + G to ungroup elements. You may need to press this a few times to fully separate the text blocks.
 3. Convert to Paths (Optional - required if you are using a cutting machine): If you want to convert the text to vector outlines so it stays perfectly shaped across all devices:Select your text using the Select Tool (F1).Go to the top menu and click Path > Object to Path.Note: This turns your letters into vector nodes so you can edit their shapes, but the text will no longer be editable as regular typed words.
 4. Save as SVG: Go to File > Save As and choose Plain SVG (*.svg) from the dropdown: this apparently is required to use the `svg` package.
 
-If you don't have Inkscape or don't wish to run it multiple times: just use `\includegraphics` (the command works with `graphicx` included in the preamble file named `commonheaders_pcd_2026.tex`) to insert a PNG version.
+If you don't have Inkscape or don't wish to run it multiple times: just use `\includegraphics` (the command works with `graphicx` included in the preamble file named `commonheaders_pcd_2026.tex`) to insert a PNG version. You can generate a PNG from your PDF (Inkscape works well for this, so does something like Preview on macOS).
