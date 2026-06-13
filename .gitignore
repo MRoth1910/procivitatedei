@@ -1,0 +1,16 @@
+.DS_Store
+*.ind
+*.ilg
+*.idx
+*.log
+*.gtex
+*.glog
+*.aux
+*.synctex.gz
+*.out
+*.toc
+*.gaux
+*.synctex(busy)
+*.fls
+*.fdb_latexmk
+*.gsnippet
