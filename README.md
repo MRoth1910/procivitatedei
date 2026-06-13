@@ -31,9 +31,13 @@ But the specific way to type the magic comment (sometimes case-senstive) and whi
 
 The booklet size for PCD is A4, the standard European (ISO) paper size. However, with `geometry`, one can even make custom, not-available sizes or use any other standard (see that package's documentation). Then one just needs to tweak the dimensions, but I have used these settings with American letter paper, smaller paper, etc. with very few changes.
 
+I use a mix of French and American punctuation for the Latin; the spacing is provided automatically once a language is set with the various options  with the `babel` package (I find that it works better than `polyglossia` with my font of choice). See the documentation for more details.
+
+Now, as to style: you might be interested in my style guide at the [Vesperale Romanum proect](https://github.com/MRoth1910/Vesperale-Romanum)
+
 # How did I make the title?
 
-See the `pcd.tex` file and change the words and paper size as needed. Then in Inkscape, you need to :
+See the `pcd.tex` file and change the words and paper size as needed. Then in Inkscape, you need to (copied from google but it works):
 
 1. Import the PDF: Open Inkscape, click File > Open, and select your PDF. In the PDF import settings window, make sure to set the Text import option to "Embed fonts" or "Import text as text" (depending on your Inkscape version) so the text is recognized.
 2. (I probably skipped this step: start over if you have problems and include it if you find the result unsatisfactory): Ungroup Elements: By default, the PDF imports as a single group. Select the document (or press Ctrl + A) and press Ctrl + Shift + G to ungroup elements. You may need to press this a few times to fully separate the text blocks.
